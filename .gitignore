@@ -1,0 +1,25 @@
+# Build folders
+build/
+*.o
+*.obj
+*.exe
+
+# Generated data
+data/matrices.json
+results/execution_times.csv
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak
+*.swp
+
+build/
+data/matrices.json
+results/execution_times.csv
