@@ -162,7 +162,7 @@ This project uses a dependency-based Python tool for graphs.
 
 The Python package used is:
 
-- `plotly`
+- `plotly` speedup is not perfectly linear because of thread overhead, memory access cost, and coordination cost speedup is not perfectly linear because of thread overhead, memory access cost, and coordination cost
 - `kaleido`
 
 The dependency list is stored in:
@@ -218,6 +218,9 @@ or:
 This command creates all chart outputs at once:
 
 - `output/charts/performance_report.html`
+- `output/charts/sample_times.html`
+- `output/charts/average_time_comparison.html`
+- `output/charts/why_speedup_is_not_linear.html`
 - `output/charts/summary_chart_data.csv`
 - `output/charts/sample_chart_points.csv`
 - PNG chart files in `output/charts/png/`
@@ -233,6 +236,9 @@ It creates:
 
 ```text
 output/charts/performance_report.html
+output/charts/sample_times.html
+output/charts/average_time_comparison.html
+output/charts/why_speedup_is_not_linear.html
 ```
 
 and also creates separate chart-data CSV files:
@@ -257,10 +263,11 @@ output/charts/svg/matrix_1000x1000_speedup_gap.svg
 
 Open the HTML file in a browser to see:
 
-- a results table
-- interactive sample-time graph
-- interactive average time chart
-- interactive scaling graph that compares measured speedup with the ideal line
+- a responsive report header with navigation buttons
+- an overview page with the measured results tables
+- a separate Sample Times page
+- a separate Average Time Comparison page
+- a separate Why Speedup Is Not Linear page
 - PNG chart files for slides and reports
 - SVG chart files for sharp vector export
 
