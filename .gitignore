@@ -1,25 +1,16 @@
-# Build folders
 build/
-*.o
-*.obj
-*.exe
-
-# Generated data
-data/matrices.json
-results/execution_times.csv
-
-# VS Code settings
-.vscode/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Backup files
-*~
-*.bak
-*.swp
-
-build/
-data/matrices.json
-results/execution_times.csv
+build-cmake/
+.venv/
+__pycache__/
+*.pyc
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+data/*.json
+src/data/
+output/*
+!output/.gitkeep
+!output/charts/
+!output/charts/.gitkeep

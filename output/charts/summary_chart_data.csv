@@ -1,0 +1,8 @@
+matrix_size,mode,threads,sample_count,average_time_seconds,speedup,efficiency,verified
+1000,Serial,1,7,2.078373,1.000000,1.000000,true
+1000,Parallel,2,7,1.385241,1.500370,0.750185,true
+1000,Parallel,3,7,1.537656,1.351650,0.450550,true
+1000,Parallel,4,7,1.593725,1.304098,0.326024,true
+1000,Parallel,5,7,1.545331,1.344937,0.268987,true
+1000,Parallel,6,7,1.537999,1.351348,0.225225,true
+1000,Parallel,7,7,1.540334,1.349300,0.192757,true
